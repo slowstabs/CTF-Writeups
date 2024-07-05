@@ -17,12 +17,24 @@ We see that its a `.sh` file, so we change the file extention to .sh, give permi
 On running the script we get a file called `flag`, this will happen multiple times so just repeat the process of finding out file type and extracting it again and again and again.
 Many things can be extracted with `binwalk`, if not then the given zip types in the upcoming files will have their own decompressing so do that over and over.
 
+Here's the order of files I had to go through with the decompression commands:
+
+
+
+
+
 Finally you'll get to your final stage which will have a ASCII text file and inside it you'll see a string which looks like hex, run that in CyberChef and voila!
 
 `picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_3c79c5ba}`
 
 
-
+1. b2zip - `binwalk -e flag`
+2. gzip - `binwalk -e 64`
+3. lzip - `lzip -d -k flag`
+4. lz4 - `lz4 -d -k flag`
+5. lzma - `lzma -d -k flag`
+6. lzop - `lzop -d -k 0`
+7. so on i got bored
 
 
 
