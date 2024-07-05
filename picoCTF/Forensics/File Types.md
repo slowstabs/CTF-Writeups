@@ -19,15 +19,6 @@ Many things can be extracted with `binwalk`, if not then the given zip types in 
 
 Here's the order of files I had to go through with the decompression commands:
 
-
-
-
-
-Finally you'll get to your final stage which will have a ASCII text file and inside it you'll see a string which looks like hex, run that in CyberChef and voila!
-
-`picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_3c79c5ba}`
-
-
 1. b2zip - `binwalk -e flag`
 2. gzip - `binwalk -e 64`
 3. lzip - `lzip -d -k flag`
@@ -35,6 +26,14 @@ Finally you'll get to your final stage which will have a ASCII text file and ins
 5. lzma - `lzma -d -k flag`
 6. lzop - `lzop -d -k 0`
 7. so on i got bored
+
+
+Finally you'll get to your final stage which will have a ASCII text file and inside it you'll see a string which looks like hex, run that in CyberChef and voila!
+
+`picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_3c79c5ba}`
+
+
+
 
 
 
