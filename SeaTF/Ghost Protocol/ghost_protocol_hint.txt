@@ -1,0 +1,34 @@
+The ghosts communicate silently,
+In space between moments they hide.
+Count not the words, but the silence,
+For in the emptiness, truth resides.
+
+When windows open to the network,
+Even and odd tell a story untold.
+ICMP speaks more than it seems,
+In its identity, secrets unfold.
+
+DNS records hold the cipher,
+But without the key, darkness remains.
+Assemble the pieces with precision,
+To reveal what the ghost contains.
+
+SeaTF{th1s_1s_n0t_th3_fl4g_y0u_4r3_l00k1ng_f0r}
+SeaTF{d3c0y_fl4g_tr0ll0l0l0l}
+SeaTF{n1c3_try_but_th3_r34l_fl4g_1s_h1dd3n_d33p3r}
+
+
+
+PTxdVxDhq8iUxGXiKAWWpkUATiOwzy
+G870dBwLsPXVhUh5LbwJ/PUoqyZnYo
+MqHjwFAE89mS7odJY2dX7W6Oz3fqkN
+Mkwpcsa2vEhM0xe/icDAlLM9wQ5DnJ
+MkRcIe8lxcHM3YZ4eTznJHXVk/4REw
+5ewveWhMxJwlTJQXCbpDPyqNw1OGYh
+dUUoMfM2MPAlN2VTmAoLT427LYQyU6
+rFiotE17PTuT4fcwAbshaSXdJLxXD8
+nBS4w4J2QVcgL9jM
+
+PTxdVxDhq8iUxGXiKAWWpkUATiOwzyG870dBwLsPXVhUh5LbwJ/PUoqyZnYoMqHjwFAE89mS7odJY2dX7W6Oz3fqkNMkwpcsa2vEhM0xe/icDAlLM9wQ5DnJMkRcIe8lxcHM3YZ4eTznJHXVk/4REw5ewveWhMxJwlTJQXCbpDPyqNw1OGYhdUUoMfM2MPAlN2VTmAoLT427LYQyU6rFiotE17PTuT4fcwAbshaSXdJLxXD8nBS4w4J2QVcgL9jM
+
+When packets travel the wire unseen, Look not at what they say, but spaces between. Windows open and close with purpose untold, Even and odd, a pattern to behold. The echo's identity carries more than it seems, In microseconds, a hidden flag gleams.
