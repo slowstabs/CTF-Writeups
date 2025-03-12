@@ -2,9 +2,9 @@
 
 300
 
-Her Royal Highness is in a peculiar situation and since she hasn't touched a laptop since… forever, help her?
+_Her Royal Highness is in a peculiar situation and since she hasn't touched a laptop since… forever, help her?_
 
-Link To Resources : https://drive.google.com/drive/folders/1Z5J6JpgI1OHgz3POkLRr4JAiEoQSonWg
+_Link To Resources : https://drive.google.com/drive/folders/1Z5J6JpgI1OHgz3POkLRr4JAiEoQSonWg_
 
 On the drive, we get an image and a zip file. While looking through the metadata of the image, exiftool said skipped bytes so I checked the image's hex and found `221BBakerStreet`.
 
