@@ -37,3 +37,6 @@ if __name__ == "__main__":
 
 ```
 
+After getting the ACSII numbers here, I converted it into text and we get our flag
+
+Flag: `saic{s0_m4ny_n3wl1n35_b7w_7h15_15_4_v3ry_l0ng_fl4g_y0u_wr073_5cr1p7!!}`
