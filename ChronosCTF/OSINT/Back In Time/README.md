@@ -41,5 +41,61 @@ The website had the github link of that person who's readme had the flag.
 
 Flag: `saic{p@v1tr_g0t_c4ugh7_1n_w4yb4ck_w3b!!}`
 
+
+## Back to Time - 3
+
+Solves : 14
+
+Description: A secret folder has been left behind on ex-SAIC member's GitHub that was never meant to be found. But what’s locked inside remains a mystery.
+
+Rumors suggest that the key to unlocking it is hidden somewhere on the web, buried within paragraphs...
+
+Your mission is to track down the password and reveal what lies within.
+
 ---
 
+On inspecting the dude's github more, we find a repository called `Back to time III`. The repository had a zip file called `FLAG.zip` with a markdown file called `something.md`. `FLAG.zip` was as expected, password protected and was not crackable with rockyou.
+
+I went through `something.md` which had a link which lead me to the wikipedia link of SpiderMan. The markdown file also had a hint saying that it is more than 8. Which made me interpret that the password for the zip was on the wikipedia page of Spiderman and had a length of more than 8 characters.
+
+Therefore, I got a script to get all the words on the wikipedia site which were either 8 letters or longer and made a wordlist of them.
+
+```python
+import requests
+from bs4 import BeautifulSoup
+import re
+
+# Wikipedia page URL
+url = "https://en.wikipedia.org/wiki/Spider-Man"  # Change this to your target page
+
+# Fetch the page content
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract text content
+text = soup.get_text()
+
+# Extract words (considering only alphabetic words)
+words = re.findall(r'\b[a-zA-Z]{8,}\b', text)
+
+# Remove duplicates and sort
+unique_words = sorted(set(words))
+
+# Save to a wordlist file
+with open("wordlist.txt", "w") as f:
+    for word in unique_words:
+        f.write(word + "\n")
+
+print("Wordlist saved as wordlist.txt")
+
+```
+
+On using the new `wordlist.txt` as the wordlist on the hash of FLAG.zip, we get our password. 
+
+![image](https://github.com/user-attachments/assets/6e4d48a7-00c2-4297-840c-b12ca50b80fd)
+
+On opening the zip file with the password, we find the flag in it.
+
+Flag: `saic{c3wl_w0rd5_f0r_bru73f0rc1ng!!}`
+
+---
