@@ -76,3 +76,39 @@ print(flag)
 ```
 
 flag: BYPASS_CTF{Fr4m3_By_Fr4m3_D3c3pt10n}
+
+---
+
+### 3. Captain's Sextant
+
+The function `process_input_event` calls another function `align_star` which takes `g_star_timings[]` as input. The `align_star` function has a shift/xor mechanism being made on the values of `g_star_timings[]`. Recreate the function and get the flag.
+
+Script: 
+```
+timings = [
+    0xE5,0xF3,0x6F,0x7F,0x10,0x33,0xA1,0x24,0xCB,0x30,
+    0xD6,0xFD,0x8A,0x81,0x7D,0xEC,0xF0,0x9D,0xEA,0x07,
+    0x6C,0xBD,0x2C,0xCE,0xFD,0xF7,0xBD,0xF7,0x9A,0xEA,
+    0x4F,0x87,0xCE,0xB4,0x28,0x7E,0x4B,0xA3,0xE9,0x45,
+    0x4F,0x97,0x81,0x68
+]
+
+def lcg_step(k):
+    return (1103515245 * k + 12345) & 0x7FFFFFFF
+
+flag = ""
+for index, t in enumerate(timings):
+    k = 322416807
+    for _ in range(index):
+        k = lcg_step(k)
+
+    shift = (index & 3)
+    mask = (k >> shift) & 0xFF
+    ch = t ^ mask
+    flag += chr(ch)
+
+print(flag)
+
+```
+
+flag: BYPASS_CTF{T1m1ng_1s_Ev3ryth1ng_In_Th3_V01d}
