@@ -28,7 +28,7 @@ The found two images when XOR'ed with each other gives the word `tales` which hi
 
 <img width="400" height="400" alt="flag" src="https://github.com/user-attachments/assets/494c6c11-d534-47a7-89a7-70ad8a73347b" />
 
-Honestly forgot how I got part two but I got `tell_no_` from a base64 string and having `tell_no_tales` hinted towards the flag being `dead_men_tell_no_tales`. Which happened to be correct.
+Honestly forgot how I got part two but I got `tell_no_` from a base64 string from an error statement or sm and so having `tell_no_tales` hinted towards the flag being `dead_men_tell_no_tales`. Which happened to be correct.
 
 Flag: BYPASS_CTF{dead_men_tell_no_tales}
 
