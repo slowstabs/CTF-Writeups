@@ -44,5 +44,35 @@ flag: BYPASS_CTF{T1d3s_0f_D3c3pt10n}
 
 ---
 
+### 2. Cursed Compass
 
+The `calculate_wave_physics` was the function of interest as it had an pseudo rng gen and was XOR'ed with data from `g_tide_data`.
 
+Reversing the algorithm, gave us the flag. 
+
+Script:
+```
+g = [
+0x4F,0x5D,0x21,0x4E,0x0A,0x5E,0x98,0x0D,0xFE,0xEA,
+0xB2,0xB0,0xC8,0x57,0x9E,0xE8,0xB8,0x49,0x84,0x05,
+0xCE,0x7E,0x49,0xEA,0xEF,0x6F,0x16,0xE3,0x8A,0x29,
+0x70,0x44,0x83,0xA5,0x39,0x67
+]
+
+s = 195948557
+flag = ""
+
+for i in range(len(g)):
+    # advance PRNG i times
+    s = 195948557
+    for _ in range(i):
+        s = (1664525*s + 1013904223) & 0xffffffff
+
+    decoded = ((s >> (i % 7)) ^ g[i]) & 0xff
+    flag += chr(decoded)
+
+print(flag)
+
+```
+
+flag: BYPASS_CTF{Fr4m3_By_Fr4m3_D3c3pt10n}
