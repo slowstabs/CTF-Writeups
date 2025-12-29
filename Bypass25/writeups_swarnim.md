@@ -1,9 +1,6 @@
 # Bypass25 CTF Writeups  
 ## Team: **TrickedMyAunty**
 
-This document contains writeups for challenges solved during **Bypass25 CTF**, organized by category.  
-Each challenge includes the original description followed by an explanation of the approach and solution.
-
 ---
 
 ## 📑 Index
@@ -673,10 +670,9 @@ https://discord.gg/MkDXpPm6Pt
 
 ---
 
-## ✅ End Notes
+## SOCIALS
 
-- Flags intentionally redacted
-- Writeups focus on **methodology and learning**
-- Designed for collaboration and review
-
+- [LinkedIn](https://www.linkedin.com/in/swarnimbandekar)
+- [Medium](https://medium.com/@swarnimbandekar)
+- [GitHub](https://github.com/swarnimbandekar)
 ---
