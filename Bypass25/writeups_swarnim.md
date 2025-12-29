@@ -16,10 +16,7 @@ Each challenge includes the original description followed by an explanation of t
 
 ### 📂 Steganography
 - [Gold Challenge](#gold-challenge)
-- [Pirate's Hidden Cove](#pirates-hidden-cove)
-- [Pirate's Treasure Hunt](#pirates-treasure-hunt)
-- [A Treasure That Doesn’t Exist](#a-treasure-that-doesnt-exist)
-- [The Cursed Archive](#the-cursed-archive)
+
 
 ### 🌐 Web
 - [The Lost Log Book](#the-lost-log-book)
@@ -292,24 +289,6 @@ plt.savefig('extracted_layers.png')
 
 ### Flag
 **BYPASS_CTF{Aztec_Gold_Curse_Lifted}**
-
----
-
-## Gold Challenge
-
-**Category:** Steganography
-
-### Challenge Description
-des
-
-**File Provided**
-- `Medallion_of_Cortez.bmp`
-
-### Solution
-- website
-
-### Flag
-**BYPASS_CTF{D0nt_trust_a11}**
 
 ---
 
