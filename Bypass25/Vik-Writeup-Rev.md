@@ -1,6 +1,6 @@
 ## BypassCTF Writeups Reverse Engineering
 
-1. Dead Man's Riddle
+### 1. Dead Man's Riddle
 
 The main logic of this was in the `consult_compass` function, where the input string is encrypted using the rolling global variable g_state. For each character, the program combined the character value and its index with part of g_state, producing a transformed byte. This transformed value was then compared against a hard-coded table in check_course(). Since the transformation was fully reversible and the expected values were stored in the binary, we could recreate the algorithm, reverse the math for each of the 30 positions, and recover the original passphrase.
 
