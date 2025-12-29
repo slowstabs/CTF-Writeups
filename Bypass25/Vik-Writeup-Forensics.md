@@ -20,5 +20,21 @@ Flag: BYPASS_CTF{My_d0g_0st3pp3d_0n_4_b33_shh}
 
 ---
 
+### 2. Silas's Last Voyage
+
+Analysis of the disk img gives us a bunch of deleted files. We get 3 files which are different from the others, 2 images and one .wav. The wav had morse code which read `Logs first path second coin third` which was to do with the order of the flags. 
+
+The found two images when XOR'ed with each other gives the word `tales` which hits towards coin so third part.
+
+<img width="400" height="400" alt="flag" src="https://github.com/user-attachments/assets/494c6c11-d534-47a7-89a7-70ad8a73347b" />
+
+Honestly forgot how I got part two but I got `tell_no_` from a base64 string and having `tell_no_tales` hinted towards the flag being `dead_men_tell_no_tales`. Which happened to be correct.
+
+Flag: BYPASS_CTF{dead_men_tell_no_tales}
+
+
+
+
+
 
 
