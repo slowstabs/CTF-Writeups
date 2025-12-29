@@ -1,6 +1,4 @@
-# BypassCTF Writeups
-
-## Crypto
+## BypassCTF Writeups Crypto
 
 ### 1. Count the steps, not the stars
 
