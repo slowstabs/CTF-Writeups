@@ -7,7 +7,7 @@
 
 ### 🔐 Cryptography
 - [Chaotic Trust](#chaotic-trust)
-- [🏴‍☠️ Whispers of the Cursed Scroll](#🏴‍☠️-whispers-of-the-cursed-scroll)
+- [Whispers of the Cursed Scroll](#whispers-of-the-cursed-scroll)
 - [The Key Was Never Text](#the-key-was-never-text)
 - [Once More Unto the Same Wind](#once-more-unto-the-same-wind)
 
@@ -23,7 +23,7 @@
 - [The Cursed Archive](#the-cursed-archive)
 
 ### 🎲 Miscellaneous
-- [Level Devil 💀](#level-devil-💀)
+- [Level Devil](#level-devil)
 - [The Heart Beneath the Hull](#the-heart-beneath-the-hull)
 - [Follow the trend](#follow-the-trend)
 - [Hungry, Not Stupid](#hungry-not-stupid)
@@ -87,7 +87,7 @@ Flag: BYPASS_CTF{CH40T1C_TRU57_15_4W350M3!}
 
 ---
 
-## 🏴‍☠️ Whispers of the Cursed Scroll
+## Whispers of the Cursed Scroll
 
 **Category:** Cryptography  
 
@@ -450,7 +450,7 @@ checking vc might help
 
 ---
 
-## Level Devil 💀
+## Level Devil
 
 **Category:** Miscellaneous  
 
