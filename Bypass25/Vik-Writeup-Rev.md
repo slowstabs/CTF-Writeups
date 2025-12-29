@@ -112,3 +112,42 @@ print(flag)
 ```
 
 flag: BYPASS_CTF{T1m1ng_1s_Ev3ryth1ng_In_Th3_V01d}
+
+---
+
+### 4. Deceiver's Log
+
+Function `whisper_truth` has the flag pretty much with a rotating key XOR. Recreate the function, give the key value which was `0BADF00D` (found in `g_chaos`)
+
+Script:
+
+```
+g_chaos = 0x0BADF00D
+
+constants = {
+ 0:0x4F,1:0x5F,2:0x53,3:0x40,4:0x53,5:0xD3,6:0x9F,7:0xA3,8:0xA4,
+ 9:0xBE,10:7,11:0xEA,12:0xAD,13:0x1A,14:0x82,15:0x2F,16:0xF2,
+ 17:0x98,18:0xDB,19:0x2A,20:0x8A,21:0x33,22:0x1D,23:0x48,
+ 24:0x45,25:0xB5,26:0x36,27:0xFE,28:0x95,29:0x1E,30:7,
+ 31:0x74,32:0x52,33:0x5F,34:0x33,35:0x74,36:0x72,37:0xDF,
+ 38:0x85,39:0x99,40:0xC3,41:0x8B,42:1
+}
+
+def ror(x):
+    return ((x>>1) | ((x&1)<<31)) & 0xFFFFFFFF
+
+k = g_chaos
+out = []
+
+for i in range(43):
+    c = constants[i]
+    out.append((k ^ c) & 0xFF)
+    k = ror(k)
+
+print(bytes(out))
+print(bytes(out).decode(errors="ignore"))
+
+```
+
+
+flag: BYPASS_CTF{Tru5t_N0_0n3_N0t_Ev3n_Y0ur_Ey3s}
