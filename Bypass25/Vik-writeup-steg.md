@@ -12,6 +12,6 @@ Flag: BYPASS_CTF{D34D_M4N5_CH35T}
 
 Arrange the parts to form the image, write down the string that you get with the little letters: `Gurcnffjbeqvf:oLCNFF_PGS{RVTUG_CBRPRF_BS_R\TUG}`.
 
-ROT13 that, we get our flag. `Thepasswordis:bYPASS_CTF{EIGHT_POECES_OF_E\GHT}` (idk why were flags crooked like this, fix the grammar and its correct)
+ROT13 that, we get our flag. `Thepasswordis:bYPASS_CTF{EIGHT_POECES_OF_E\GHT}` (idk why were flags crooked like this, maybe I read it wrong, fix the grammar and its correct)
 
 Flag: BYPASS_CTF{EIGHT_PIECES_OF_EIGHT}
