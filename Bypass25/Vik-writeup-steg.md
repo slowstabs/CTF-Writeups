@@ -15,3 +15,9 @@ Arrange the parts to form the image, write down the string that you get with the
 ROT13 that, we get our flag. `Thepasswordis:bYPASS_CTF{EIGHT_POECES_OF_E\GHT}` (idk why were flags crooked like this, maybe I read it wrong, fix the grammar and its correct)
 
 Flag: BYPASS_CTF{EIGHT_PIECES_OF_EIGHT}
+
+### 3. the music one 
+
+It was playing a C major scale ie: CDEFGABC, the notes were BADFACE. Being a musician helped in a CTF lol.
+
+Flag: BYPASS_CTF{BADFACE}
