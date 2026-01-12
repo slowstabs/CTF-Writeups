@@ -11,7 +11,7 @@ I started with running `pslist` as usual and really observed only one process of
 
 So therefore, I ran `filescan` to find the address, to then extract. (nvm brainfart dunno what it is yet, got the address tho, maybe useful -> `0x000000003fd095b0` )
 
-Got stuck for a while so I tried using `clipboard` and found nothing again. So I looked at another writeup... and it told me to brute force so I used `filescan` to brute every single common file extention possible. So I used the following cmd and listed the files:
+Got stuck for a while so I tried using `clipboard` and `screenshot` and found nothing again. So I looked at another writeup... and it told me to brute force so I used `filescan` to brute every single common file extention possible. So I used the following cmd and listed the files:
 
 `vol2 -f MemoryDump_Lab4.raw --profile=Win7SP0x64 filescan | grep -i '\\Users\\' | grep -i "jpg\|jpeg\|png\|bmp\|txt\|exe\|py" `
  
