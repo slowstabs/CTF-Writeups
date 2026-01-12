@@ -23,5 +23,12 @@ Through this I found 3 mail files which stood out, `galf.jpeg`, `Screenshot1.png
 
 One of the files didn't show up in the dump and it was `Important.txt`. On referring to the writeup again, I found out that this happens when a file is deleted. The way to retrieve it is to access the MFT data. Volatility has a plugin to get this data called `mftparser`. It does give a lot of data therefore it is adviced to store the output in a file.
 
+On grep'ing through the output file, we can find the contents of Information.txt in a hex view which contained the flag. 
+
+<img width="1473" height="679" alt="image" src="https://github.com/user-attachments/assets/0965bebe-8188-4fb0-94b1-6b78683f1f14" />
+
+Final Flag: `inctf{1_is_n0t_EQu4l_7o_2_bUt_th1s_d0s3nt_m4ke_s3ns3}`
+
+
 
 
