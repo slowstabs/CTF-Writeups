@@ -1,4 +1,4 @@
-<img width="1450" height="370" alt="image" src="https://github.com/user-attachments/assets/a76c5e67-9fea-41a9-96c9-d8406535db8f" /><img width="1403" height="398" alt="image" src="https://github.com/user-attachments/assets/d82152f2-5a8b-4fdd-b1f1-b70cadfe897b" />## Lab 2 - Memlabs
+## Lab 2 - Memlabs
 
 > Challenge Description:
 > My system was recently compromised. The Hacker stole a lot of information but he also deleted a very important file of mine. I have no idea on how to recover it. The only evidence we have, at this point of time is this memory dump. Please help me.
