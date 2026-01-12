@@ -29,6 +29,10 @@ On grep'ing through the output file, we can find the contents of Information.txt
 
 Final Flag: `inctf{1_is_n0t_EQu4l_7o_2_bUt_th1s_d0s3nt_m4ke_s3ns3}`
 
+---
 
+### Personal Gains
 
-
+1. Learnt more cool grep quirks (didnt know -A xx would print next 30 lines)
+2. Learnt a little about how deletion works and what a Master File Table (MFT) is and why it contains deleted file data in dumps.
+3. Getting a little hang of using vol for sure
