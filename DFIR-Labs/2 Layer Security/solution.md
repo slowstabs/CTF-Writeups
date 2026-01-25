@@ -67,9 +67,11 @@ iEX ((("{40}{19}{25}{46}{15}{11}{41}{20}{14}{48}{33}{47}{37}{35}{2}{1}{31}{23}{1
     Process {
         YPMaesManaged.Key = YPMshaManaged.ComputeHash([System.Text.Encoding]::UTF8.GetBytes(EOkYPMencryptedByte')).rePlace(([cHaR]69+[cHaR]79+[cHaR]107),[STRInG][cHaR]39).rePlace(([cHaR]106+[cHaR]110+[cHaR]79),[STRInG][cHaR]34).rePlace(([cHaR]89+[cHaR]80+[cHaR]77),[STRInG][cHaR]36) )
 ```
+Now after I got this, I got lost again so I asked AI what to do, and I found out that `iEX` is short for Invoke-Expression. And replacing iEX with echo basically executes the script which gives us the script, similar to if I had a b64 string and ran `iEX aGVsbG8= | base64 -d` -> `echo aGVsbG8= | base64 -d`. This gave me the script which was used to encrypt the pdf. 
 
 
 
+> Powershell wasn't allowing me to run stuff so I found this is how you temporary allow yourself to do it: 
 ```
 powershell -ExecutionPolicy Bypass -File .\fix.ps1
 ```
