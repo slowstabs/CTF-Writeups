@@ -132,4 +132,23 @@ function Encryption {
 }
 ```
 
-Now in the script we can see that the string `$encryptedBytes` is being used as the key to encrypt
+Now in the script we can see that the string `$encryptedBytes` is being used as the key to encrypt. And also the first 16 bytes of the ciphertext is the IV, therefore we split that and write a script to decrypt. 
+
+```python
+from Crypto.Cipher import AES
+from hashlib import sha256
+
+data = open('./home/kalilinux/Desktop/recycle.bin', 'rb').read()
+key = sha256(b'$encryptedBytes').digest()
+
+iv, ct = data[:16], data[16:]
+aes = AES.new(key, AES.MODE_CBC, iv)
+open('decrypted.bin', 'wb').write(aes.decrypt(ct))
+
+```
+
+Now we have the file which was gotten after the gpg encryption. Now to decrypted that, we needed the same gpg key. I learned that I need to use the same .gnupg folder to use the keys used for encryption so now my wsl has that random ahh .gnupg folder lol. dunno if this will cause issues :P (basically replaced my .gnupg with the .gnupg provided to us.
+
+Finally ran `gpg --decrypt decrypted.bin > flag.pdf` and found the flag in the pdf.
+
+Flag: idek{Cr34t1n9_ch4ll3ngEs_6_d4ys_6_n1gts_w1th0ut_s133p}
